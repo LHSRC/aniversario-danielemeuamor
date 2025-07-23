@@ -256,7 +256,7 @@
         .love-btn:hover { background: linear-gradient(45deg, #ff6b9d, #ff8a80); }
         .surprise-btn:hover { background: linear-gradient(45deg, #ffd54f, #ffb74d); }
         .kiss-btn:hover { background: linear-gradient(45deg, #f48fb1, #f06292); }
-        .music-btn:hover { background: linear-gradient(45deg, #81c784, #66bb6a); }
+        .declaration-btn:hover { background: linear-gradient(45deg, #81c784, #66bb6a); }
         .memory-btn:hover { background: linear-gradient(45deg, #64b5f6, #42a5f5); }
         .future-btn:hover { background: linear-gradient(45deg, #ba68c8, #ab47bc); }
         
@@ -619,7 +619,7 @@
             </div>
             
             <div class="photo-card">
-                <img src="./imagens/foto5.jpg" class="photo" alt="Aniversário 23 anos" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <img src="./imagens/foto5.jpg" class="photo" alt="Aniversário 24 anos" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                 <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; display: none; align-items: center; justify-content: center; font-size: 1.1rem; text-align: center; padding: 20px;">
                     🎂 Dani comemorando 24 anos<br>com bolo das Princesas
                 </div>
@@ -647,8 +647,8 @@
                 <button class="magic-btn kiss-btn" onclick="showKisses()">
                     😘 Beijinhos
                 </button>
-                <button class="magic-btn music-btn" onclick="playMusic()">
-                    🎵 Nossa Música
+                <button class="magic-btn declaration-btn" onclick="showDeclaration()">
+                    💌 Declaração
                 </button>
                 <button class="magic-btn memory-btn" onclick="showMemory()">
                     📸 Memórias
@@ -676,7 +676,11 @@
                     
                     <p>Daniele, você chegou na minha vida e transformou tudo. Antes de você, eu não sabia o que era amar alguém com essa intensidade, com essa certeza, com essa vontade de construir um futuro junto.</p>
                     
+                    <p><strong>Eu sei que cometi erros, e prometo que vou fazer ela feliz e irei reconquistar a sua confiança.</strong> Cada dia será uma oportunidade de te mostrar o quanto você é importante para mim, de provar que mereço estar ao seu lado e de construir novamente a base sólida do nosso amor.</p>
+                    
                     <p>Cada beijo nosso é especial porque foi com você que aprendi a beijar com amor. Cada abraço seu é único porque foi nos seus braços que descobri o que é se sentir em casa. Cada "eu te amo" que eu digo é verdadeiro porque foi você quem me ensinou o verdadeiro significado dessas palavras.</p>
+                    
+                    <p>Prometo ser o homem que você merece, aquele que te protege, te valoriza e te faz sorrir todos os dias. Vou trabalhar para ser digno do seu amor e da sua confiança, porque você é o que há de mais precioso na minha vida.</p>
                     
                     <p><em>Você é minha primeira em tudo que importa, e por isso mesmo, será minha última e eterna.</em></p>
                 </div>
@@ -869,22 +873,24 @@
             `);
         }
         
-        function playMusic() {
-            createFloatingMessage('🎵 NOSSA MÚSICA! 🎶');
+        function showDeclaration() {
+            createFloatingMessage('💌 MINHA DECLARAÇÃO! 💖');
+            createLoveExplosion();
             
             showModal(`
                 <h2 style="color: #81c784; font-family: 'Dancing Script', cursive; font-size: 3rem;">
-                    🎵 Nossa Música do Coração 🎶
+                    💌 Minha Declaração de Amor 💖
                 </h2>
                 <p style="font-size: 1.3rem; line-height: 1.6;">
-                    🎤 "Toda vez que eu te vejo..." <br>
-                    🎼 Nossa música especial que me lembra de você! <br>
-                    💕 Cada nota me faz pensar no nosso amor! <br>
-                    🎧 Quando ouço, é como se você estivesse aqui comigo! 
+                    💕 Você é a pessoa mais importante da minha vida! <br>
+                    🌟 Cada dia com você é um presente de Deus! <br>
+                    💝 Meu amor por você cresce a cada segundo! <br>
+                    🔥 Você incendeia meu coração de paixão! <br>
+                    ♾️ Te amarei por toda a eternidade! 
                 </p>
                 <div style="margin-top: 30px;">
-                    <p style="font-style: italic; color: #a5d6a7;">
-                        "A música mais linda é o som da sua risada" 🎵💖
+                    <p style="font-style: italic; color: #a5d6a7; font-size: 1.4rem;">
+                        "Não existem palavras suficientes para expressar o quanto te amo" 💕
                     </p>
                 </div>
             `);
